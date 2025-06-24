@@ -10,6 +10,7 @@ export default defineConfig(async () => {
     const availablePort = await findAvailablePort(basePort);
 
     return {
+        base: '/',
         plugins: [vue()],
         server: {
             port: availablePort,
